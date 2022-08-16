@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portifolio</title>
+    <style>
+        .nav {
+            height: 70px;
+            border-bottom: 1px solid black;
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-right-items {
+            display: flex;
+            margin-left: auto;
+            margin-right: 20px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 30px;
+            font-style: oblique;
+            background-color: blueviolet
+        }
+
+        .nav-right-items:hover {
+            background-color: aqua
+        }
+
+        .nav-item {
+            margin-left: 10px;
+        }
+
+        .company-name {
+            margin-left: 20px;
+        }
+
+        .title {
+
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 60px;
+            font-weight: bold;
+            text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+            font-family: Verdana, Geneva, Tahoma, sans-serif
+        }
+
+        @keyframes slide {
+            from {
+                left: -100px;
+                opacity: 0;
+            }
+
+            to {
+                left: 400px;
+                opacity: 1;
+            }
+        }
+
+        .substitle {
+            text-align: center;
+            font-size: 40px;
+            font-weight: 300;
+        }
+
+        .main {
+            width: 800px;
+            margin: 0 auto;
+            margin-top: 60px;
+        }
+
+        .img {
+            margin-top: 50px;
+            margin-left: 50px;
+        }
+
+        .photo {
+            position: absolute;
+            top: 100px;
+            right: 200px;
+            height: 300px;
+            animation: slide 2s ease-out;
+
+        }
+
+        .Information {
+            display: flex;
+
+        }
+
+        h1 {
+            border: 1px solid black;
+        }
+
+        .Education {
+            width: 300px;
+            height: 300px;
+            border: 1px solid orangered;
+            margin-top: 50px;
+            margin-right: 50px;
+            border-radius: 5px;
+            text-align: center;
+            padding-top: 10px;
+            background-color: aquamarine;
+
+        }
+
+        .Hobbies {
+            width: 300px;
+            height: 300px;
+            border: 1px solid orangered;
+            margin-top: 50px;
+            margin-right: 50px;
+            border-radius: 5px;
+            text-align: center;
+            padding-top: 10px;
+            background-color: antiquewhite
+        }
+
+        .Background {
+            width: 300px;
+            height: 300px;
+            border: 1px solid orangered;
+            margin-top: 50px;
+            margin-right: 50px;
+            border-radius: 5px;
+            text-align: center;
+            padding-top: 10px;
+            background-color: yellowgreen
+        }
+
+        .footer-subs {
+           max-width: 1200px;
+           margin: 0 auto;
+        }
+        .footer-subs h2 {
+            text-align: center;
+        }
+        .random-pictures {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <div class="nav-right-items">
+            <div class="nav-item"> Home</div>
+            <div class="nav-item"> About</div>
+            <div class="nav-item"> Work</div>
+            <div class="nav-item"> Contact</div>
+        </div>
+    </div>
+
+    <section>
+        <img class="img" src="https://c.tenor.com/UNTqMDwqh1gAAAAM/hello-hi.gif" alt="dancing minion">
+    </section>
+    <section>
+        <img class="photo" src="https://www.w3schools.com/css/img_5terre_wide.jpg" alt="cliff house">
+    </section>
+
+
+    <div class="main">
+        <div class="title">
+            Juneun Park
+        </div>
+        <div class="Subsitile">
+            Hello Ladies and Gentlemen! Welcome to my homepage. My name is Juneun Park and I live in California.
+        </div>
+
+        <div class="Information">
+            <div class="Education">
+                <h1>Education</h1>
+                <div class="detail">
+
+                    <p>graduated from Fraser Heights Seconday School</p>
+                    <p>graduated from Santa Barbara City College with Accounting Degree</p>
+                    <p></p>
+
+
+                </div>
+
+            </div>
+            <div class="Hobbies">
+                <h1>Hobbies</h1>
+                <p>go to gym</p>
+                <p>watch movies</p>
+                <p>hang out with friends</p>
+            </div>
+            <div class="Background">
+                <h1>Background</h1>
+                <p>born in South Korea</p>
+                <p>moved to U.S in 2010</p>
+
+            </div>
+        </div>
+    </div>
+    <section class="footer">
+        <div class="footer-subs">
+            <h2> Randdom Pictures</h2>
+            <div class="random-pictures">
+                <img src="https://picsum.photos/100/80" class="random-pictures" alt="">
+                <img src="https://picsum.photos/200/100" class="random-pictures" alt="">
+                <img src="https://picsum.photos/200/60" class="random-pictures" alt="">
+                <img src="https://picsum.photos/150/120" class="random-pictures" alt="">
+                <img src="https://picsum.photos/100/100" class="random-pictures" alt="">
+
+            </div>
+    </section>
+
+
+</body>
+
+</html>
